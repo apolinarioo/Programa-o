@@ -1,0 +1,27 @@
+<!--
+  Generated template for the BookPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Livro</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card> <img src="{{ book.cover }}" />
+    <ion-card-content>
+      <ion-card-title>{{ book.name }} </ion-card-title>
+      <p>Páginas: {{ book.pages }}</p>
+      <p>Autor: {{ book.authorName }} </p>
+      <p>Assunto: {{ book.subject }}</p>
+      <p>Editora: {{ book.publishingCompanyName }}</p>
+      <p>ISBN: {{ book.isbn }}</p>
+      <p>Publicação: {{ book.publication }}</p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
